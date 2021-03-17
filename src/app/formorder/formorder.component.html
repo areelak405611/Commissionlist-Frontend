@@ -1,0 +1,43 @@
+<small>กรอกรายละเอียดงานที่ต้องการสั่ง รายละเอียดจะถูกส่งไปให้นักวาดพิจารณาโดยตรง</small><br><br>
+<form>
+    <div class="form-group row">
+        <label for="inputPost" class="col-sm-2 col-form-label">รูปแบบตัวละคร</label>
+        <div class="col-sm-10">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose scale...</option>
+                <option value="1">Full body</option>
+                <option value="2">Half body </option>
+                <option value="3">Knee up</option>
+                <option value="3">Head shot</option>
+                <option value="3">Chibi </option>
+                <option value="3">Other</option>
+            </select><br><br>
+        </div><br>
+        <label for="inputPost" class="col-sm-2 col-form-label">ประเภทการลงสี</label>
+        <div class="col-sm-10">
+        <small id="typeC" class="form-text text-muted">ประเภทการลงสี เช่น Full color, Sketch, Rough color เป็นต้น </small>
+        <input type="typeC" class="form-control" id="typeC" aria-describedby="typeC" placeholder="Enter type">
+        </div>
+    </div>
+    <fieldset class="form-group">
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">รายละเอียด</label>
+            <div class="col-sm-10">
+                <small id="typeC" class="form-text text-muted">รายละเอียดเพิ่มเติม เช่น ลักษณะของตัวละคร, ไฟล์ภาพตัวอย่าง เป็นต้น </small>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFileLang">
+                    <label class="custom-file-label" for="customFileLang">Choose file</label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form> 
+<div class="form-group row ">
+    <div class="col-sm-12">
+        <div class="align-right">
+             <button type="submit" class="btn btn-dark">ยืนยัน</button>
+        </div>
+    </div>
+</div>

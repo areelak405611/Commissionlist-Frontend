@@ -1,0 +1,52 @@
+<div class="div-a">
+  <div class="p-0 mb-1 w-55 text-black center">
+    <div class="jumbotron w-background"><br><br>
+      <h3>ตรวจสอบออเดอร์</h3>
+      <p class="card-text"><small class="text-muted">ออเดอร์ของฉัน</small><br>
+      </p><br>
+      <form>
+
+        <div class="card-deck" *ngFor="let queue of queues">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ชื่อร้าน</h5>
+
+              <p class="card-text"><small class="text-muted">scale : {{queue.scale}}</small></p>
+              <p class="card-text"><small class="text-muted">type : {{queue.type}}</small></p>
+              <p class="card-text">Status : {{queue.work_status}}</p>
+              <p class="card-text"><small class="text-muted">อัปเดตเมื่อ 8/3/2021</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ชื่อร้าน</h5>
+              <p class="card-text"><small class="text-muted">รายละเอียด</small></p>
+              <p class="card-text">Status : In progress</p>
+              <p class="card-text"><small class="text-muted">อัปเดตเมื่อ 8/3/2021</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ชื่อร้าน</h5>
+              <p class="card-text"><small class="text-muted">รายละเอียด</small></p>
+              <p class="card-text">Status : In progress</p>
+              <p class="card-text"><small class="text-muted">อัปเดตเมื่อ 8/3/2021</small></p>
+            </div>
+          </div>
+        </div>
+
+      </form> <br>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="align-right">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

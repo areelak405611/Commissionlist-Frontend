@@ -1,0 +1,70 @@
+<div class="jumbotron w-background">
+  <div class="p-0 mb-1 w-100 text-black center">
+    <div style="background-color:transparent !important" class="jumbotron">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card" style="width: 22rem;">
+            <div class="card-body ">
+              <h5 class="card-title "><em> กล่องข้อความ</em></h5>
+              <p class="card-text ">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>sfsdgsdg<br><br><br>
+              </p>
+            </div>
+          </div><br>
+        </div>
+        <div class="col-sm-6">
+          <div class="card bw" style="width: 44.5rem; ">
+            <div class="card-body">
+              <h5 class="card-title"><em> ช่องแชท</em></h5>
+              <p class="card-text">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>sfsdgsdg<br><br><br>
+              </p>
+            </div>
+          </div><br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><em> สถานะออเดอร์</em></h5>
+              <button type="button" class="btn btn-light text-right" title="แก้ไขข้อมูลส่วนตัว" data-toggle="modal"
+                data-target="#formorder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
+                  <path d="M8.5 6a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V10a.5.5 0 0 0 1 0V8.5H10a.5.5 0 0 0 0-1H8.5V6z"/>
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                </svg>
+                เพิ่มใบเสนอราคา
+              </button>
+            </div>
+            <br>
+            <div class="card-body">
+              <h5 class="card-title"><em>State</em></h5>
+              <p class="card-text">
+                ข้อมูลเบื้องต้น
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- modal ใบเสนอราคา-->
+<div class="modal fade" id="formorder" tabindex="-1" role="dialog" aria-labelledby="formorder" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header gradient-custom ">
+        <h5 class="modal-title" id="formorder">สร้างใบเสนอราคา</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-qtion></app-qtion>
+      </div>
+
+    </div>
+  </div>
+</div>

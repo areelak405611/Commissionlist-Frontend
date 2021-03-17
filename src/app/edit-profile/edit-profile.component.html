@@ -1,0 +1,66 @@
+<div class="div-a">
+  <div class="p-0 mb-1 w-55 text-black center">
+    <div class="jumbotron w-background">
+<br><br>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="status-tab" data-toggle="tab" href="#status" role="tab" aria-controls="status"
+      aria-selected="true">แก้ไขสถานะ</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+      aria-selected="false">แก้ไขภาพโปรไฟล์</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="setup-tab" data-toggle="tab" href="#setup" role="tab" aria-controls="setup"
+      aria-selected="false">ตั้งค่าข้อมูลส่วนตัว</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="status" role="tabpanel" aria-labelledby="status-tab">
+    <br>
+    <div class="form-group" (ngSubmit)="editInfoStore()">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="My Bio"
+        [(ngModel)]="cerrentInfo" value={{getInfo()}}>{{getInfo()}}</textarea>
+    </div>
+
+    <div class="align-right">
+      <button type="submit" class="btn btn-dark" (click)="editInfo()" data-toggle="modal" data-target="#editBio">บันทึก</button>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <br>
+
+    <app-uploadprofile></app-uploadprofile>
+  </div>
+  <div class="tab-pane fade" id="setup" role="tabpanel" aria-labelledby="setup-tab">
+    <br>
+
+    <app-setup-profile></app-setup-profile>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editBio" tabindex="-1" role="dialog" aria-labelledby="editBioLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editBioLabel">แก้ไขสถานะสำเร็จ!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        กลับไปยังหน้าโปรไฟล์ หรืออยู่ต่อเพื่อแก้ไขข้อมูลอื่น?
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-dark" data-dismiss="modal" >อยู่ต่อ</button>
+        <button type="button"  class="btn btn-dark" routerLink="/profile" data-dismiss="modal">กลับไปหน้าโปรไฟล์</button>
+      </div>
+    </div>
+  </div>
+</div>

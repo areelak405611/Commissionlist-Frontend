@@ -1,0 +1,114 @@
+body {  font-family: 'Prompt', sans-serif; } 
+
+
+div.hd {
+    padding: 5px;
+    background-color: #272436;
+    color: rgb(236, 234, 234);
+  }
+
+div.ser {
+    padding: 15px 80px 5px;
+   
+  }
+
+  .carousel-item {
+    height: 50vh;
+    min-height: 450px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .center {
+    margin: auto;
+    width: 60%;
+  }
+
+  .rr {
+    margin: auto;
+    width: 30%;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  
+.ph2-background {background-color:#eeeeee;}
+.ph-background {background-color:#5a5867;}
+.black-background {background-color:#000000;}
+.purple-background {background-color:#413c51;}
+.head-background {background-color:#272436;}
+.w-background {background-color:#ffffff;}
+.white {color:#ffffff;}
+
+.bb {
+  border-color: #272436; 
+}
+
+.bw {
+  border-color: #ffffff; 
+}
+
+.ph-img {
+  width: 30%;
+  height: 30%;
+}
+
+.st-img {
+  width: 250%;
+  height: 150%;
+}
+
+.ph-b {
+  border-radius: 8%;
+}
+
+.ph-s {
+  border-radius: 2%;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #667eea;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))
+}
+
+
+.gradient-custom-st {
+  /* fallback for old browsers */
+  background: #ebbba7;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(235, 187, 167, 0.5), rgba(207, 199, 248, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(235, 187, 167, 0.5), rgba(207, 199, 248, 0.5))
+}
+
+.checked {
+  color: orange;
+}
+
+.dropdown-menu a:hover { background-color: #e5e3f0;}
+
+.align-right {
+  text-align: right;
+  border: 0;
+}
+
+
+
+
+

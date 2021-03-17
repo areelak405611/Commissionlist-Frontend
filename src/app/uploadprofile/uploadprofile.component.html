@@ -1,0 +1,105 @@
+<!--<input type="file" (change)="upload($event)" accept=".png,.jpg" />  -->
+
+<div style="text-align:center;">
+  <img className="align-self-center" src="{{ImageUrl}}" onerror="this.onerror=null;this.src='assets/+1.png';"
+    width='20%' /><br><br>
+  <input class="file-upload-input" type='file' multiple accept="image/*" (change)="onFileChanged($event)" />
+  <div *ngIf="progressValue | async as val">
+    <progress type="warning"  [value]="val" style="height: 7mm; width: 50%" max="100" ></progress>
+    <br />
+      <span *ngIf="val < 100" style="color:rgb(88, 59, 123); font-size: 17px; font-weight: 410;">{{ val | number}}% </span><span *ngIf="val == 100" style="color:rgb(95, 53, 150);  font-size: 17px; font-weight: 410;">Completed!</span>
+  </div>
+</div>
+<div class="align-right"><button type="button" class="btn btn-dark" (click)="onFileChangedUp()">บันทึก</button>
+</div>
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="editImg" tabindex="-1" role="dialog" aria-labelledby="editBioLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editBioLabel">อัปเดตรูปภาพสำเร็จ!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        กลับไปยังหน้าโปรไฟล์ หรืออยู่ต่อเพื่อแก้ไขข้อมูลอื่น?
+      </div>
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-dark" data-dismiss="modal" >อยู่ต่อ</button>
+        <button type="button"  class="btn btn-dark" routerLink="/profile" data-dismiss="modal">กลับไปหน้าโปรไฟล์</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+
+<!-- or even
+
+        <img [src]="downloadableURL"  onerror="this.onerror=null;this.src='assets/+02.PNG';"  width=30% height=30%>
+
+
+
+        simpler -->
+
+<!--
+ถ้าไม่กดตกลงให้ลบออกจากดาต้าเบส
+<div style="padding: 20mm">
+
+    <input type="file" name="file" (input)="onFileChanged($event)" accept=".jpeg,.jpg,.png,.svg" />
+    <br />
+
+    <img [src]="downloadableURL"  onerror="this.onerror=null;this.src='assets/+02.PNG';"  width="425px" height="300px"/>
+
+    <br />
+  {{this.downloadableURL}}
+    {{ downloadableURL }}
+
+    <br />
+</div>
+-->
+
+
+<!--
+
+    <div *ngIf="progressValue | async as val">
+      <progress type="warning"  [value]="val" style="height: 7mm; width: 50%" max="100" ></progress>
+      <br />
+        <span *ngIf="val < 100" style="color:rgb(255, 60, 0); font-size: 17px; font-weight: 410;">{{ val | number}}% </span><span *ngIf="val == 100" style="color:rgb(1, 153, 34);  font-size: 17px; font-weight: 410;">Completed !</span>
+    </div>
+
+ -->
+
+
+
+
+
+<!--
+ </div>
+<label for="file">File:</label>
+<input type="file" (change)="feturedPhotoSelected($event)" accept=".png,.jpg" />
+
+
+
+<label for="file">File:</label>
+<input type="file" (change)="upload($event)" accept=".png,.jpg" />
+<button type="button" class="btn btn-primary" (click)="clickUp()">Primary</button>
+
+<div *ngIf="uploadPercentage$ | async as percentage">
+    <div>uploading {{percentage}}%</div>
+</div>
+
+<label for="file">File:</label>
+<input type="file" (change)="upload($event)" accept=".png,.jpg" />
+<input type="file" class="form-control-file" id="fileUpload"
+(change)="onFileUpload($event.target.files)">
+
+<div *ngIf="uploadPercentage$ | async as percentage">
+    <div>uploading {{percentage}}%</div>
+</div>
+-->

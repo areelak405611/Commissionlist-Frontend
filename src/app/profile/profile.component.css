@@ -1,0 +1,16 @@
+p{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.alligator-turtle {
+  object-fit: cover;
+  width: 150;
+  height: 150;
+}
+
+.sizediv {
+  height: 200px;
+  width: 40%;
+
+}

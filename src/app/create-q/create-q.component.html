@@ -1,0 +1,54 @@
+
+<form #Addform='ngForm' (ngSubmit)="addOrder()">
+    <div class="form-group" >
+        <label for="customer_name">ชื่อผู้ว่าจ้าง</label>
+        <input type="name" name="customer_name" class="form-control" id="customer_name"  placeholder="Enter name"
+        [(ngModel)]="queue.customer_name">
+    </div>
+    <div class="form-group">
+        <label for="contact">ติดต่อมาจาก</label>
+        <input type="contact" class="form-control" id="contact" name="contact"placeholder="Enter contact" [(ngModel)]="queue.contact"
+        >
+    </div>
+    <label>รูปแบบตัวละคร</label>
+    <label class="mr-sm-2 sr-only" for="scale">Preference</label>
+    <select class="custom-select mr-sm-2" name="scale" id="scale" [(ngModel)]="queue.scale">
+        <option selected>Choose scale...</option>
+        <option value="Full body">Full body</option>
+        <option value="Half body">Half body </option>
+        <option value="Knee up">Knee up</option>
+        <option value="Head shot">Head shot</option>
+        <option value="Chibi">Chibi </option>
+        <option value="Other">Other</option>
+    </select><br><br>
+    <div class="form-group">
+        <label for="name">ประเภทการลงสี</label>
+        <small id="typeC" class="form-text text-muted">ประเภทการลงสี เช่น Full color, Sketch, Rough color เป็นต้น </small>
+        <input type="type" name="type" class="form-control" id="type" aria-describedby="type" placeholder="Enter type"
+        [(ngModel)]="queue.type">
+    </div>
+    <div class="form-group">
+        <label for="price">ราคา</label>
+        <input type="price" name="price" class="form-control" id="price" aria-describedby="price" placeholder="Enter price"
+        [(ngModel)]="queue.price">
+    </div>
+    <label>สถานะ</label>
+    <label class="mr-sm-2 sr-only" for="work_status">Preference</label>
+    <select class="custom-select mr-sm-2" name="work_status" id="work_status" [(ngModel)]="queue.work_status">
+        <option selected>Choose status...</option>
+        <option value="1">Waiting </option>
+        <option value="2">In progress</option>
+        <option value="3">Finished </option>
+    </select><br><br>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">รายละเอียดเพิ่มเติม</label>
+        <small id="typeC" class="form-text text-muted">รายละเอียดเพิ่มเติมที่ลูกค้าต้องการ เช่น ลักษณะของตัวละคร, ไฟล์ภาพตัวอย่าง เป็นต้น </small>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFileLang">
+        <label class="custom-file-label" for="customFileLang" >Choose file</label>
+      </div>
+<br><br>
+    <button type="submit" style="float: right;" class="btn btn-dark" (click)="addOrder()" onClick="window.location.reload()">เพิ่ม</button>
+</form>

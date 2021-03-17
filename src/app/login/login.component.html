@@ -1,0 +1,53 @@
+<div class="p-5 mb-2 text-black center">
+    <div style="background-color:transparent !important" class="jumbotron ">
+        <div class="container">
+
+            <div class="card mb-3 shadow p-3 mb-5 bg-white rounded" style="max-width: 840px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="card text-white">
+                            <img src="../../assets/+013.jpg" class="card-img">
+                            <div class="card-img-overlay">
+                                <br><br><br> <br><br><br> <br><br><br><br><br><br>
+                                <h5 class="card-title font-italic">JOIN US!</h5>
+                                <dd>
+                                    <p class="card-text font-weight-lighter"><small> Create an account to find artists you are interested in or
+                                        easily track orders and manage your queue.</small></p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">เข้าสู่ระบบ</h5>
+                            <br>
+                            <form (ngSubmit)="loginUser()">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Username" name="username" [(ngModel)]="user.username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="inputAddress" placeholder="Password" name="password" [(ngModel)]="user.password">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-dark purple-background white">เข้าสู่ระบบ</button>
+                                <br> <br> <br>
+                                <small id="passwordHelpInline" class="text-muted">
+                                    ยังไม่มีบัญชี?
+                                    <h4 routerLink="/register" class="badge badge-info text-wrap black-background"
+                                        style="width: 5rem;">สร้างบัญชี</h4>
+
+                                </small>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
